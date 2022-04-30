@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "template_python_package"
+version = "0.1.0"
+description = "Template for python package"
+authors = ["Stefan Heldt"]
+
+[tool.poetry.scripts]
+tpp_ci = 'template_python_package.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+mypy = "*"
+black = "*"
+flake8 = "*"
+pre-commit = "*"
+pre-commit-hooks = "*"
+docformatter = "*"
+reorder-python-imports = "*"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+profile = "black"
+
+[tool.mypy]
+namespace_packages = true
+ignore_missing_imports = false
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "setuptools"
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "--cov template_python_package --cov-report term-missing --verbose"
+norecursedirs = ["dist", "build", ".tox"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
