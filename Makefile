@@ -16,13 +16,13 @@ VENV_BIN=$(VENV_ROOT)/BIN
 
 # Install package
 dev: precommit
-	echo "Installing package..." \
+	@echo "Installing package..." \
 	pip install --upgrade poetry; \
 	poetry install;
 	
 # Setup development environment for project
 precommit: venv
-	echo "Setting up development environment..." \
+	@echo "Setting up development environment..." \
 	source $(VENV_BIN)/activate; \
 	pip3 install pre-commit; \
 	pre-commit install -t pre-commit; \
@@ -31,7 +31,7 @@ precommit: venv
 
 # Setup virtual environment
 venv:
-	echo "Creating virtual environment..." \
+	@echo "Creating virtual environment..." \
 	pip3 install virtualenv --user; \
 	virtualenv $(VENV_ROOT);
 
