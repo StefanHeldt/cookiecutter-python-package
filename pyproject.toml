@@ -22,6 +22,7 @@ pytest = "*"
 pytest-cov = "*"
 reorder-python-imports = "*"
 safety = "^*"
+types-pkg-resources = "*"
 
 [tool.black]
 line-length = 90
