@@ -37,7 +37,7 @@ repos:
           entry: sort-simple-yaml
           language: python
           types: ["yaml"]
-          exclude: ".config/*"
+          exclude: ".github/*"
         - id: pretty-format-json
           name: pretty-format-json
           entry: pretty-format-json --autofix
