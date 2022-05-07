@@ -16,7 +16,7 @@ VENV_BIN=$(VENV_ROOT)/BIN
 
 # Install package
 dev: precommit
-	@echo "Installing package..." \
+	@echo "Installing package and dependencies..." \
 	pip install --upgrade poetry; \
 	poetry install;
 	
@@ -41,7 +41,7 @@ venv:
 
 clean:		# WARNING removes data from directory
 	@echo
-	@echo "\nRemoving all data from local directory..."
+	@echo "Removing all data, logs and reports from local directory..."
 	rm -rf data/*; \
 	rm -rf logs/*; \
 	rm -rf reports/*
