@@ -22,7 +22,7 @@ docformatter = "*"
 reorder-python-imports = "*"
 
 [tool.black]
-line-length = 88
+line-length = 90
 target-version = ['py39']
 include = '\.pyi?$'
 
