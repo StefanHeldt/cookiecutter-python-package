@@ -11,15 +11,17 @@ tpp_ci = 'template_python_package.__main__:main'
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-pytest = "*"
-pytest-cov = "*"
-mypy = "*"
+bandit = "*"
 black = "*"
+docformatter = "*"
 flake8 = "*"
+mypy = "*"
 pre-commit = "*"
 pre-commit-hooks = "*"
-docformatter = "*"
+pytest = "*"
+pytest-cov = "*"
 reorder-python-imports = "*"
+safety = "^*"
 
 [tool.black]
 line-length = 90
