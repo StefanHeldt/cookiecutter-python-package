@@ -1,11 +1,16 @@
 [tool.poetry]
-name = "template_python_package"
-version = "0.1.0"
-description = "Template for python package"
-authors = ["Stefan Heldt"]
+name = "{{cookiecutter.project_name}}"
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.project_short_description}}"
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+readme = "README.md"
+repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.package_name}}"
+packages = [
+    {include = "{{cookiecutter.package_name}}", from = "src"},
+]
 
-[tool.poetry.scripts]
-tpp_ci = 'template_python_package.__main__:main'
+[tool.poetry.urls]
+Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.package_name}}/RELEASES.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -24,11 +29,13 @@ reorder-python-imports = "*"
 safety = "^*"
 types-pkg-resources = "*"
 
+[tool.poetry.scripts]
+{{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"
+
 [tool.black]
 line-length = 90
 target-version = ['py39']
 include = '\.pyi?$'
-
 profile = "black"
 
 [tool.mypy]
@@ -43,7 +50,7 @@ module = [
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]
-addopts = "--cov template_python_package --cov-report term-missing --verbose"
+addopts = "--cov {{cookiecutter.package_name}} --cov-report term-missing --verbose"
 norecursedirs = ["dist", "build", ".tox"]
 testpaths = ["tests"]
 
