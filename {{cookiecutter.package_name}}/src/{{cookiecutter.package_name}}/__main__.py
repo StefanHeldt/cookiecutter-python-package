@@ -1,9 +1,9 @@
 import logging.config
 
-from template_python_package.logging import LOGGING_CONFIG
+from {{cookiecutter.package_name}}.logging import LOGGING_CONFIG
 
 
-logger = logging.getLogger("template_python_package")
+logger = logging.getLogger("{{cookiecutter.package_name}}")
 
 
 def main() -> None:
@@ -12,4 +12,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    """{{cookiecutter.friendly_name}}"""
+    main(prog_name="{{cookiecutter.project_name}}")

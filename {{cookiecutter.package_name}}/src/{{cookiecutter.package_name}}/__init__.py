@@ -1,3 +1,5 @@
+"""{{cookiecutter.friendly_name}}"""
+
 import os
 from pathlib import Path
 
@@ -12,7 +14,7 @@ if not os.path.exists(log_path):
 
 try:
     # Change here if project is renamed and does not equal the package name
-    dist_name = "template_python_package"
+    dist_name = "{{cookiecutter.package_name}}"
     __version__ = get_distribution(dist_name).version
 except DistributionNotFound:
     __version__ = "unknown"
