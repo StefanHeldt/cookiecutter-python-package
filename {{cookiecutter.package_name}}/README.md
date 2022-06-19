@@ -9,6 +9,8 @@
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
+{{cookiecutter.project_short_description}}
+
 ## Features
 
 - TODO
