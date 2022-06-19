@@ -21,7 +21,11 @@
 
 ## Installation
 
-- TODO
+Create and activate your development environment with
+```console
+make dev
+source .venv/bin/activate
+```
 
 ## Usage
 
