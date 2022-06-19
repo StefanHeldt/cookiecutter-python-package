@@ -1,11 +1,11 @@
 [flake8]
-ignore = 
+ignore =
         E203,  # Whitespace before ':'
         E266,  # Too many leading '#' for block comment
         E501,  # Line too long (82 &gt; 79 characters)
         W503,  # Line break occurred before a binary operator
         W605,  # invalid escape sequence
-max-line-length = 100
+max-line-length = 90
 max-complexity = 18
 select = B,C,E,F,W,T4,B9
 exclude =
