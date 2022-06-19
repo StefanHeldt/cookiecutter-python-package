@@ -7,5 +7,5 @@
   "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
   "project_name": "cookiecutter-python-package",
   "project_short_description": "Boilerplate code for setting up a new Python package",
-  "version": "1.0.0"
+  "version": "0.1.0"
 }
