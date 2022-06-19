@@ -4,7 +4,7 @@
 ##############################
 # GLOBALS
 ##############################
-PROJECT_NAME=template_python_package
+PROJECT_NAME={{cookiecutter.package_name}}
 
 SHELL:=/bin/bash
 VENV_ROOT=.venv
@@ -19,7 +19,7 @@ dev: precommit
 	@echo "Installing package and dependencies..." \
 	pip install --upgrade poetry; \
 	poetry install;
-	
+
 # Setup development environment for project
 precommit: venv
 	@echo "Setting up development environment..." \
