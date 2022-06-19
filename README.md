@@ -1,8 +1,8 @@
 # cookiecutter-python-package
 
 <!-- badges-begin -->
-[![pre-commit enabled][pre-commit badge]][pre-commit project]
 [![Black codestyle][black badge]][black project]
+[![pre-commit enabled][pre-commit badge]][pre-commit project]
 
 [black badge]: https://img.shields.io/badge/code%20style-black-000000.svg
 [black project]: https://github.com/psf/black

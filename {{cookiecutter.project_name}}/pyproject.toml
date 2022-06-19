@@ -4,13 +4,13 @@ version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.project_short_description}}"
 authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 readme = "README.md"
-repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.package_name}}"
+repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
 packages = [
     {include = "{{cookiecutter.package_name}}", from = "src"},
 ]
 
 [tool.poetry.urls]
-Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.package_name}}/RELEASES.md"
+Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/RELEASES.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
