@@ -1,4 +1,5 @@
 import logging.config
+
 from template_python_package.logging import LOGGING_CONFIG
 
 

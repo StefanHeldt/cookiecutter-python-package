@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
-from pkg_resources import DistributionNotFound, get_distribution
+
+from pkg_resources import DistributionNotFound
+from pkg_resources import get_distribution
 
 package_root = Path(__file__).resolve(strict=True).parents[2]
 log_path = package_root.joinpath("logs")

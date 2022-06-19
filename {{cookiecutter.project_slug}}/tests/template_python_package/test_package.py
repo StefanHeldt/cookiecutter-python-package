@@ -1,6 +1,5 @@
-from template_python_package import __version__
-
 import toml
+from template_python_package import __version__
 
 
 def test_package():
