@@ -1,5 +1,6 @@
-import toml
 from {{cookiecutter.package_name}} import __version__
+
+import toml
 
 
 def test_package():

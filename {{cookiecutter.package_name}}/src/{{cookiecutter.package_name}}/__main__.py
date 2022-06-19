@@ -1,5 +1,4 @@
 import logging.config
-
 from {{cookiecutter.package_name}}.logging import LOGGING_CONFIG
 
 
@@ -12,5 +11,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    """{{cookiecutter.friendly_name}}"""
+    """{{cookiecutter.friendly_name}}."""
     main(prog_name="{{cookiecutter.project_name}}")

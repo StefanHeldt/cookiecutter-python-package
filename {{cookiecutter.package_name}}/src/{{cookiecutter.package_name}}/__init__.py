@@ -1,5 +1,4 @@
-"""{{cookiecutter.friendly_name}}"""
-
+"""{{cookiecutter.friendly_name}}."""
 import os
 from pathlib import Path
 
