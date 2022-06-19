@@ -30,7 +30,7 @@ LOGGING_CONFIG = {
         },
     },
     "loggers": {
-        "template_python_package": {
+        "{{cookiecutter.package_name}}": {
             "level": "INFO",
             "handlers": [
                 "verbose_output",

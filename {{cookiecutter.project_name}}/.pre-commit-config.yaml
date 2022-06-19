@@ -1,0 +1,79 @@
+default_language_version:
+    python: python3
+repos:
+    - repo: local
+      hooks:
+        - id: black
+          name: Run black
+          entry: black
+          language: python
+          types: [python]
+          require_serial: true
+        - id: check-added-large-files
+          name: Check added large files
+          entry: check-added-large-files
+          args: ['--maxkb=2000']
+          language: system
+        - id: check-docstring-first
+          name: Check docstring first
+          entry: check-docstring-first
+          language: python
+          types: ["python"]
+        - id: check-json
+          name: Check json
+          entry: check-json
+          language: system
+          types: ["json"]
+        - id: check-merge-conflict
+          name: Check merge conflicts
+          entry: check-merge-conflict
+          language: system
+        - id: check-toml
+          name: Check toml
+          entry: check-toml
+          language: system
+          types: [toml]
+        - id: check-yaml
+          name: Check yaml
+          entry: check-yaml
+          language: system
+          types: ["yaml"]
+        - id: docformatter
+          name: Format docstrings
+          entry: docformatter
+          language: python
+          types: ["python"]
+          args: [-r, --in-place, --wrap-summaries=90, --wrap-descriptions=90, --blank]
+        - id: end-of-file-fixer
+          name: Fix end of files
+          entry: end-of-file-fixer
+          language: system
+          types: ["text"]
+        - id: flake8
+          name: flake8
+          entry: flake8
+          language: python
+          types: ["python"]
+          require_serial: true
+          args: [--max-line-length=90]
+        - id: pretty-format-json
+          name: Format json
+          entry: pretty-format-json --autofix
+          language: system
+          types: ["json"]
+        - id: reorder-python-imports
+          name: Reorder python imports
+          entry: reorder-python-imports
+          language: python
+          types: ["python"]
+        - id: sort-simple-yaml
+          name: Sort yaml
+          entry: sort-simple-yaml
+          language: system
+          types: ["yaml"]
+          exclude: ".github/*"
+        - id: trailing-whitespace
+          name:  Trim trailing whitespace
+          entry: trailing-whitespace-fixer
+          language: system
+          types: ["text"]

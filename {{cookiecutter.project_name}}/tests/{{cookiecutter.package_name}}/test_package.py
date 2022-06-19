@@ -1,4 +1,4 @@
-from template_python_package import __version__
+from {{cookiecutter.package_name}} import __version__
 
 import toml
 

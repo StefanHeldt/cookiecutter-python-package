@@ -1,72 +1,16 @@
-default_language_version:
-    python: python3
+exclude: "^{{cookiecutter\\.project_name}}/"
 repos:
-    - repo: local
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.3.0
       hooks:
-        - id: check-added-large-files
-          name: check-added-large-files
-          entry: check-added-large-files
-          args: ['--maxkb=2000']
-          language: python
-        - id: check-docstring-first
-          name: check-docstring-first
-          entry: check-docstring-first
-          language: python
-          types: ["python"]
         - id: check-json
-          name: check-json
-          entry: check-json
-          language: python
-          types: ["json"]
         - id: check-merge-conflict
-          name: check-merge-conflict
-          entry: check-merge-conflict
-          language: python
         - id: check-yaml
-          name: check-yaml
-          entry: check-yaml
-          language: python
-          types: ["yaml"]
         - id: end-of-file-fixer
-          name: end-of-file-fixer
-          entry: end-of-file-fixer
-          language: python
-          types: ["text"]
-        - id: sort-simple-yaml
-          name: sort-simple-yaml
-          entry: sort-simple-yaml
-          language: python
-          types: ["yaml"]
-          exclude: ".github/*"
         - id: pretty-format-json
           name: pretty-format-json
           entry: pretty-format-json --autofix
           language: python
           types: ["json"]
+          exclude: "cookiecutter.json"
         - id: trailing-whitespace
-          name:  trailing-whitespace
-          entry: trailing-whitespace-fixer
-          language: python
-          types: ["python"]
-        - id: reorder-python-imports
-          name: reorder-python-imports
-          entry: reorder-python-imports
-          language: python
-          types: ["python"]
-        - id: docformatter
-          name: docformatter
-          entry: docformatter
-          language: python
-          types: ["python"]
-          args: [-r, --in-place, --wrap-summaries=90, --wrap-descriptions=90, --blank]
-        - id: black
-          name: black
-          entry: black
-          language: python
-          types: ["python"]
-        - id: flake8
-          name: flake8
-          entry: flake8
-          language: python
-          types: ["python"]
-          args: [--max-line-length=90]
