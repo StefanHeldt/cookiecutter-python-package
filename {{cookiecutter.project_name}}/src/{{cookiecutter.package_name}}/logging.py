@@ -1,4 +1,7 @@
-ERROR_LOG_FILENAME = "./logs/error.log"
+from {{cookiecutter.package_name}} import log_path
+
+
+ERROR_LOG_FILENAME = log_path / "error.log"
 
 LOGGING_CONFIG = {
     "version": 1,

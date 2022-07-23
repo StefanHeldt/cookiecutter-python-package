@@ -6,7 +6,7 @@ from pkg_resources import DistributionNotFound
 from pkg_resources import get_distribution
 
 package_root = Path(__file__).resolve(strict=True).parents[2]
-log_path = package_root.joinpath("logs")
+log_path = package_root / "logs"
 
 if not os.path.exists(log_path):
     os.makedirs(log_path)
