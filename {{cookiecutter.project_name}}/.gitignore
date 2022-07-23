@@ -4,6 +4,7 @@
 /reports/*
 /.venv/*
 /models/*
+/logs/*
 
 # Byte-complied / optimized / DLL / temporary files
 *~
