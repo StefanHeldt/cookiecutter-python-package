@@ -2,7 +2,7 @@ import argparse
 import logging.config
 import sys
 
-from {{cookiecutter.package_name}}.logging import LOGGING_CONFIG
+from {{cookiecutter.package_name}}.logging import CONFIG
 from {{cookiecutter.package_name}} import __version__
 from typing import List
 
@@ -49,7 +49,7 @@ def parse_args(args: List[str]) -> argparse.Namespace:
 
 
 def main() -> None:
-    logging.config.dictConfig(LOGGING_CONFIG)
+    logging.config.dictConfig(CONFIG)
     args = parse_args(sys.argv[1:])
     logger.setLevel(args.loglevel)
 

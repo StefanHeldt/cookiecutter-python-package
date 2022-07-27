@@ -3,7 +3,7 @@ from {{cookiecutter.package_name}} import log_path
 
 ERROR_LOG_FILENAME = log_path / "error.log"
 
-LOGGING_CONFIG = {
+CONFIG = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
