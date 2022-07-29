@@ -9,8 +9,8 @@ packages = [
     {include = "{{cookiecutter.package_name}}", from = "src"},
 ]
 
-[tool.poetry.urls]
-Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/RELEASES.md"
+[tool.poetry.scripts]
+{{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -29,8 +29,8 @@ reorder-python-imports = "*"
 safety = "*"
 types-pkg-resources = "*"
 
-[tool.poetry.scripts]
-{{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"
+[tool.poetry.urls]
+Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/RELEASES.md"
 
 [tool.black]
 line-length = 90
