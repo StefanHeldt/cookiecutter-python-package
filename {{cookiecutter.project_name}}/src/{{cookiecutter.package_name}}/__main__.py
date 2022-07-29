@@ -2,7 +2,7 @@ import argparse
 import logging.config
 import sys
 
-from {{cookiecutter.package_name}}.logging import CONFIG
+from {{cookiecutter.package_name}}.logs import CONFIG
 from {{cookiecutter.package_name}} import __version__
 from typing import List
 
