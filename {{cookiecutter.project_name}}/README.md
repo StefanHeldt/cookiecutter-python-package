@@ -16,20 +16,35 @@
 - TODO
 
 ## Requirements
-
-- TODO
+Python 3.10 and [poetry](https://python-poetry.org). 
 
 ## Installation
-
-Create and activate your development environment with
+If you don't have poetry, install it using
 ```console
-make dev
+curl -sSL https://install.python-poetry.org/install-poetry.py | python -
+```
+Configure poetry to not create virtualenvs and use in-project virtualenvs
+```console
+poetry config virtualenvs.create false
+poetry config virtualenvs.create true
+```
+
+To set up a development environment run `make dev` in a terminal. This should:
+- Create a virtual environment with Python 3.10
+- Activate the virtual environment and install `poetry`
+- Install the dependencies described in `pyproject.toml` file
+- Install the pre-commit hooks
+
+Activate your development environment with
+```console
 source .venv/bin/activate
 ```
 
 ## Usage
-
-- TODO
+Once installed, you can run the package via its command line entry point
+```console
+{{cookiecutter.project_name}}
+```
 
 ## Issues
 
