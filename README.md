@@ -19,5 +19,5 @@
 ## Usage
 
 ```console
-$ cookiecutter gh:stefanheldt/cookiecutter-python-package
+cookiecutter gh:stefanheldt/cookiecutter-python-package
 ```
