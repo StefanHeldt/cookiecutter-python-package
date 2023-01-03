@@ -48,4 +48,4 @@ Once installed, you can run the package via its command line entry point
 
 ## Issues
 
-- TODO
+:bug: Bugs can be raised on [GitHub](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/issues).
