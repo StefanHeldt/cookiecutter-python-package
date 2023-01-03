@@ -13,7 +13,7 @@ ENV APP_HOME=/home/app \
     POETRY_VIRTUALENVS_CREATE=false
 
 RUN python3 -m venv ${VENV} \
-    && ${VENV}/bin/pip install --upgrade pip poetry==1.1.14 poetry-core==1.0.7 \
+    && ${VENV}/bin/pip install --upgrade pip poetry==1.2.2 poetry-core==1.4.0 \
     && ${VENV}/bin/poetry config virtualenvs.create false
 
 COPY . ${APP_HOME}
