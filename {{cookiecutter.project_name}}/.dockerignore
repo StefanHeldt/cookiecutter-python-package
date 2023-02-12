@@ -21,6 +21,11 @@ __pycache__
 .gitignore
 .cache
 
+# Docker files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
 # Project files
 .ropeproject
 .project
