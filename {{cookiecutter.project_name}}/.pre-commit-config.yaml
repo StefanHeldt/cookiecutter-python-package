@@ -71,7 +71,7 @@ repos:
           entry: sort-simple-yaml
           language: system
           types: ["yaml"]
-          exclude: ".github/*"
+          exclude: ".github/*|.circleci/config|docker-compose"
         - id: trailing-whitespace
           name:  Trim trailing whitespace
           entry: trailing-whitespace-fixer
