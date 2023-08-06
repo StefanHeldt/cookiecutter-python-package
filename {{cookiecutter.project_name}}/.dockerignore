@@ -70,3 +70,6 @@ untracked
 untracked_deps
 untracked_scripts/
 Makefile
+
+# Secrets
+.env
