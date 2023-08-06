@@ -27,7 +27,9 @@ pytest = "*"
 pytest-cov = "*"
 reorder-python-imports = "*"
 safety = "*"
+toml = "*"
 types-pkg-resources = "*"
+types-toml = "*"
 
 [tool.poetry.urls]
 Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/RELEASES.md"
