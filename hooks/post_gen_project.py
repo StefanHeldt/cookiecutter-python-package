@@ -3,12 +3,12 @@
 import os
 
 
-repo_name = '{{ cookiecutter.project_name }}'
-setup_git = True if '{{ cookiecutter.setup_git_repo }}' == "Yes" else False
+repo_name = "{{ cookiecutter.project_name }}"
+setup_git = True if "{{ cookiecutter.setup_git_repo }}" == "Yes" else False
 
 if setup_git:
-    err = os.system('bash ./setup_git_repo.sh %s' %repo_name)
+    err = os.system("bash ./setup_git_repo.sh %s" % repo_name)
     if err:
         print("Error with GitHub repository setup!")
-    
+
 os.remove("./setup_git_repo.sh")
