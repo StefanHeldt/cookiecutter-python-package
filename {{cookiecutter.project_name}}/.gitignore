@@ -3,7 +3,6 @@
 /logging/*
 /reports/*
 /.venv/*
-/models/*
 /logs/*
 
 # Byte-complied / optimized / DLL / temporary files
@@ -52,6 +51,9 @@ coverage.xml
 
 # Mac OS-specific storage files
 .DS_Store
+
+# Secrets
+.env
 
 # Others
 /untracked/*
