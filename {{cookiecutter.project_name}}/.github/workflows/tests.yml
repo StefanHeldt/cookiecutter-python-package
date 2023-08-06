@@ -67,5 +67,5 @@ jobs:
         run: poetry run mypy src/
       - name: Run bandit
         run: poetry run bandit .
-      - name: Run saftey
+      - name: Run safety
         run: poetry run safety check
