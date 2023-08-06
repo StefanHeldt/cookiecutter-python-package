@@ -11,6 +11,4 @@ if setup_git:
     if err:
         print("Error with GitHub repository setup!")
     
-
-os.system("cd %s" %repo_name)
 os.remove("./setup_git_repo.sh")
